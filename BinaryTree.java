@@ -1,21 +1,20 @@
 package oop.ex4.data_structures;
 
-public class AvlTree extends BinaryTree{
-   /** This class is the complete and tested implementation of an AVL-tree.**/
+
+public abstract class BinaryTree implements Iterable<Integer>{
+
+    protected int size = 0;
 
 
-     /**
-     * A default constructor.
-     */
-   public AvlTree(){
-   }
+    public BinaryTree(){
+    }
 
     /**
      *A constructor that builds the tree by adding the elements in the input
      * array one-by-one If the same values appears twice (or more) in the list, it is ignored.
      * @param data values to add to tree
      */
-    public AvlTree(int[] data){
+    public BinaryTree(int[] data){
     }
 
 
@@ -23,7 +22,7 @@ public class AvlTree extends BinaryTree{
      *     A copy-constructor that builds the tree from existing tree
      * @param tree     tree - tree to be copied
      */
-    public AvlTree(AvlTree tree){
+    public BinaryTree(AvlTree tree){
     }
 
 
@@ -89,30 +88,3 @@ public class AvlTree extends BinaryTree{
     public static int findMaxNodes(int h){
         return 0;
     }
-
-    private class Node{
-        /* Node Data */
-        private int data;
-
-        /* Node left daughter node, smaller int. */
-        private Node leftDaughter;
-
-        /* Node right daughter node, larger int */
-        private Node rightDoughter;
-
-        
-        private Node parent;
-
-        public Node(int dataValue){
-            this.data = dataValue;
-        }
-    }
-    /**
-     * main method.
-     * @param args received from user.
-     */
-    public static void main(java.lang.String[] args){
-
-    }
-
-}
