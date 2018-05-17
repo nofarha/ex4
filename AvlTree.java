@@ -90,23 +90,7 @@ public class AvlTree extends BinaryTree{
         return 0;
     }
 
-    private class Node{
-        /* Node Data */
-        private int data;
 
-        /* Node left daughter node, smaller int. */
-        private Node leftDaughter;
-
-        /* Node right daughter node, larger int */
-        private Node rightDoughter;
-
-        
-        private Node parent;
-
-        public Node(int dataValue){
-            this.data = dataValue;
-        }
-    }
     /**
      * main method.
      * @param args received from user.
